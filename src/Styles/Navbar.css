@@ -1,0 +1,39 @@
+.main-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  min-width: 85vw;
+}
+.img {
+  display: flex;
+  background-color: #5840ba;
+  flex-direction: column;
+  max-width: 15vw;
+  min-height: 100vh;
+}
+
+.img img {
+  max-height: 130px;
+}
+
+.main-navbar ul {
+  list-style: none;
+  display: flex;
+  margin-top: 40px;
+}
+
+.main-navbar ul li {
+  text-align: center;
+  vertical-align: top;
+  font-size: 20px;
+  font-family: Montserrat;
+  line-height: auto;
+  color: #8d79d9;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  margin-right: 2.5rem;
+}
+
+.main-navbar ul li a {
+  text-decoration: none;
+}

@@ -1,0 +1,52 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px 0px 0px 0rem;
+}
+
+.main h1 {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.main input {
+  height: 40px;
+  border: none;
+  outline: none;
+}
+
+.main input[type="text"] {
+  background-color: #f8f9fd;
+  text-indent: 10px;
+  width: 600px;
+}
+
+.main input[type="text"]::placeholder {
+  text-indent: 10px;
+  color: #8d79d9;
+  letter-spacing: 3px;
+}
+.main input[type="submit"] {
+  font-family: "Montserrat", sans-serif;
+  margin-left: -50px;
+  border-radius: 5px;
+  width: 111px;
+  background: #5840ba;
+  color: white;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+.main-inputs {
+  display: flex;
+}
+.main-inputs button {
+  font-family: "Montserrat", sans-serif;
+  margin-left: 20px;
+  border-radius: 5px;
+  width: 150px;
+  background: #5840ba;
+  color: white;
+  border: 0;
+  -webkit-appearance: none;
+}

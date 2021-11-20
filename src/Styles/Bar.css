@@ -1,0 +1,11 @@
+.main-bar {
+  display: flex;
+  background-color: #5840ba;
+  flex-direction: column;
+  max-width: 15vw;
+  min-height: 100vh;
+}
+
+.main-bar img {
+  max-height: 130px;
+}
