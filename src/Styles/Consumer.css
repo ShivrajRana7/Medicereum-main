@@ -1,0 +1,109 @@
+.consumer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 0px 0px 0rem;
+  }
+  
+  .consumer h1 {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+  }
+  
+  .consumer input {
+    height: 40px;
+    border: none;
+    outline: none;
+  }
+  
+  .consumer input[type="text"] {
+    background-color: #f8f9fd;
+    text-indent: 10px;
+    width: 600px;
+  }
+  
+  .consumer input[type="text"]::placeholder {
+    text-indent: 10px;
+    color: #8d79d9;
+    letter-spacing: 3px;
+  }
+  .consumer input[type="submit"] {
+    font-family: "Montserrat", sans-serif;
+    margin-left: -50px;
+    border-radius: 5px;
+    width: 111px;
+    background: #5840ba;
+    color: white;
+    border: 0;
+    -webkit-appearance: none;
+  }
+  
+  .consumer-inputs {
+    display: flex;
+  }
+  .consumer-inputs button {
+    font-family: "Montserrat", sans-serif;
+    margin-left: 20px;
+    border-radius: 5px;
+    width: 150px;
+    background: #5840ba;
+    color: white;
+    border: 0;
+    -webkit-appearance: none;
+  }
+
+  .group-1 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    min-height: 40px;
+    width: 595px;
+  }
+  
+  .flex-row {
+    align-items: flex-start;
+    display: flex;
+    height: 30px;
+    min-width: 587px;
+  }
+  
+  .place {
+    letter-spacing: 0;
+    min-height: 30px;
+    text-align: center;
+    width: 78px;
+  }
+  
+  .manufacturer {
+    letter-spacing: 0;
+    margin-left: 30px;
+    min-height: 30px;
+    text-align: center;
+    width: 179px;
+  }
+  
+  .consumer {
+    letter-spacing: 0;
+    margin-left: 30px;
+    min-height: 30px;
+    text-align: center;
+    width: 141px;
+  }
+  
+  .retailer {
+    letter-spacing: 0;
+    margin-left: 30px;
+    min-height: 30px;
+    text-align: center;
+    width: 99px;
+  }
+  
+  .line-9 {
+    align-self: flex-end;
+    height: 3px;
+    margin-right: 137px;
+    margin-top: 8px;
+    width: 40px;
+  }
+  
+  @import url("https://fonts.googleapis.com/css?family=Roboto:700|Montserrat:400,500,600");
+  
