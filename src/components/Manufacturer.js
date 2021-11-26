@@ -5,6 +5,7 @@ import {toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { SUPPLYCHAIN_CONTRACT_DEPLOY_ADDRESS } from '../repository/address';
 import '../Styles/Manufacturer.css';
+import Navbar from './Navbar';
 
 const ipfsClient = require('ipfs-api');
 const projectId = '1uwWDcQaH4IZJCPBDWg7v6MVOjM';
@@ -136,9 +137,11 @@ const Manufacturer = ({accountObject,web3Object,supplychainContract}) => {
     }
 
     return(
+            <>
+            <Navbar />
             <div className="header">
                 <h1>Manufacturer</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>As a Manufacturer, only you have the right to add new batches and new suppliers to the management chain.</p>
                 <br /><br />
                 <label className="label">If you want to add new batch or new supplier, select from the below :</label><br /><br />
 
@@ -196,6 +199,7 @@ const Manufacturer = ({accountObject,web3Object,supplychainContract}) => {
             </div>
 
             </div>
+            </>
         );
 }
 

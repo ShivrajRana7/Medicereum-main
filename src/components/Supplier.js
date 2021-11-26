@@ -4,6 +4,7 @@ import React, { Component, useState } from 'react';
 import {toast} from 'react-toastify';
 import { SUPPLYCHAIN_CONTRACT_DEPLOY_ADDRESS } from '../repository/address';
 import '../Styles/Supplier.css'
+import Navbar from './Navbar';
 
 const Supplier = ({accountObject,web3Object,supplychainContract}) => { 
 
@@ -45,10 +46,12 @@ const Supplier = ({accountObject,web3Object,supplychainContract}) => {
         }
     }
     return (
+        <>
+        <Navbar />
         <div className="supplier">
             <h1>Supplier</h1>
             <p>
-                To verify the medicine, first scan the QR code and fetch its batch doc.
+                To verify the medicine, compare the batch doc and give a verification vote.
             </p>
             
             <div className="mt-4">
@@ -80,9 +83,8 @@ const Supplier = ({accountObject,web3Object,supplychainContract}) => {
             </div> */}
             
                 {txHash ? <h2>Batch Verified : {batch}</h2> : null}
-            
-
         </div>
+        </>
     )
 }
 
