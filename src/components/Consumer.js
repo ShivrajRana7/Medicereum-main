@@ -1,11 +1,9 @@
 import React, { Component, useState, useRef, useEffect } from 'react';
 import {Jumbotron, Container,Card, CardColumns, Button, Row,Col,Form, ListGroup, Table} from 'react-bootstrap';
 import { toast } from 'react-toastify';
-// import QRCode from 'qrcode';
 import QrReader from 'react-qr-reader';
 import { SUPPLYCHAIN_CONTRACT_DEPLOY_ADDRESS } from '../repository/address';
 import { SUPPLYCHAIN_CONTRACT_ABI } from '../repository/supplychain';
-
 import '../Styles/Consumer.css';
 
 
@@ -91,63 +89,40 @@ const Consumer = ({accountObject,web3Object,supplychainContract}) => {
         <div className="consumer">
             <h1>Consumer</h1>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Scan the QR code to get the batch code of your medicine and then enter the code to get the verification details. 
             </p>
-            <div className="consumer-inputs">
-                <input type="text" placeholder="Enter your new batch code" onChange={(e) => { setBatchCode(e.target.value) }} />
-                <input type="submit" value="Submit" onClick={handleSubmit} />
-
-                
-           <div>
-           {/* <button onClick={onScanFile}>Scan QR code</button> */}
-           
-           <select onChange={(e) => {setSelectedOpt(e.target.value);}}>
-                <option selected disabled>Choose an option to scan QR</option>
-                <option value="file" >Scan via file browser</option>
-                <option value="webcam">Scan Via Web Cam</option>
-            </select>
             
+           <div className="mt-4">
+           <Form.Group className="mb-4" controlId="formBasicPassword">
+                <Form.Select aria-label="Default select example" onChange={(e) => {setSelectedOpt(e.target.value);}}>
+                    <option selected disabled>Choose an option to scan QR</option>
+                    <option value="file">Scan via file browser</option>
+                    <option value="webcam">Scan Via Web Cam</option>
+                </Form.Select>
+
                 <div style={{display: selectedOpt == "webcam" ? "block" : "none"}}>
+                    <QrReader delay={300} style={{width: '15%'}} onError={handleErrorWebCam} onScan={handleScanWebCam} />
+                        <h5 className="mt-2">Scanned Code : {scanResultWebCam}</h5>
+                </div>
+   
+                <div style={{display: selectedOpt == "file" ? "block" : "none"}}>
+                    <Button className="mt-3 mb-3 " style={{background:"#5840ba"}} onClick={onScanFile}>Scan QR code</Button>
+                    <QrReader ref={qrRef} delay={300} style={{width: '15%'}} onError={handleErrorFile} onScan={handleScanFile} legacyMode />
+                        <h5 className="mt-2">Scanned Code: {scanResultFile}</h5>
+                </div>
 
-                <QrReader
-               
-                          delay={300}
-                          style={{width: '100%'}}
-                          onError={handleErrorWebCam}
-                          onScan={handleScanWebCam}
-                         
-                        />
-                        <h3>Scanned : {scanResultWebCam}</h3>
-                     </div>
-
-
-
-
-                     <div style={{display: selectedOpt == "file" ? "block" : "none"}}>
-                           <button onClick={onScanFile}>Scan QR code</button>
-                <QrReader
-                         ref={qrRef}
-                          delay={300}
-                          style={{width: '100%'}}
-                          onError={handleErrorFile}
-                          onScan={handleScanFile}
-                          legacyMode
-                         
-                        />
-                        <h3>Scanned Code: {scanResultFile}</h3>
-                     </div>
-
-                     
-          
-                       
-
-
+            </Form.Group>
+            <br />
+           <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Control type="text" placeholder="Enter the scanned batch code" onChange={(e) => { setBatchCode(e.target.value)}} />
+            </Form.Group>
+            
+            <Button style={{background:"#5840ba"}} onClick={handleSubmit}>Submit</Button>
+            </div>
                         
                {medname? <h2>Medicine Name : {medname}</h2> : null}
                {batchdoc? <h2>Batch Doc : <a href={"https://ipfs.infura.io/ipfs/"+ batchdoc} target="_blank">Doc Link</a></h2> : null}
                {medname? <MapComponent Mapdata={vermap}/> : null}
-        </div>
-        </div>
         </div>
     )
 }

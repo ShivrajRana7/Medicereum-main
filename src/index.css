@@ -27,12 +27,12 @@ h5 {
   font-weight: 600;
   padding-right: 860px;
 }
-.dLogo {
+/* .dLogo {
   right: 10%;
   top: -95px;
   position: absolute;
   display: inline;
-}
+} */
 
 .showcase {
   position: absolute;
@@ -87,7 +87,7 @@ h5 {
   background-size: 25px;
   background-position: center;
 }
-/* .showcase video {
+.showcase video {
   position: absolute;
   top: 0;
   left: 0;
@@ -95,10 +95,10 @@ h5 {
   height: 100%;
   object-fit: cover;
   opacity: 0.8;
-} */
-/* .menu {
+}
+.menu {
   display: none;
-} */
+}
 
 .overlay {
   position: absolute;

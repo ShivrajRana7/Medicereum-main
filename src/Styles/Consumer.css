@@ -1,15 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Slab:wght@500;700&display=swap');
+
 .consumer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 20px 0px 0px 0rem;
+    margin: 100px 50px 0 50px;
+    /* padding: 20px 0px 0px 0rem; */
   }
   
-  .consumer h1 {
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-  }
-  
-  .consumer input {
+.consumer h1{
+    font-family: 'Roboto Slab', serif;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    color: #777;
+}  
+  /* .consumer input {
     height: 40px;
     border: none;
     outline: none;
@@ -103,7 +109,5 @@
     margin-right: 137px;
     margin-top: 8px;
     width: 40px;
-  }
-  
-  @import url("https://fonts.googleapis.com/css?family=Roboto:700|Montserrat:400,500,600");
-  
+  } */
+    

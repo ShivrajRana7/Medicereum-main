@@ -1,7 +1,6 @@
-// import Navbar from "./Navbar";
 import React from "react";
-import logo from '../assets/logo.svg';
-// import '../Styles/Home.css';
+import Logo from '../assets/Logo.png'
+import videoUrl from '../assets/backVideo1.mp4'
 import {useState }from 'react';
 
 const Home = ({accountObject}) => {
@@ -21,33 +20,31 @@ const Home = ({accountObject}) => {
     return (
         <>
             <div className="home-container">
-        <section className={menuToggle[toggle]}>
-            <header>
-                <h2 className="logo">Medicereum</h2>
-                <div className="dmatrix-nav-item">
-            {/* <Link to="/account-info">Your Account: {accountObject.web3Account}</Link> */}
-            <a>Your Account: {accountObject.web3Account}</a>
-            </div>
-                <div className={toggleToggle[toggle]} onClick={doingToggle}>
-                </div>
-                </header>      
-                    <h5>The <b>DMatrix</b>, is a creative software driven by the power of blockchain to securely store your data
-                        <div className="dLogo">
-                            <img src={logo}></img>
+                <section className={menuToggle[toggle]}>
+                    <header>
+                        <img src={Logo} style={{width:"100px", height:"100px"}} />
+                        <div className="dmatrix-nav-item" style={{fontFamily:"Montserrat', sans-serif"}}>
+                            {/* <Link to="/account-info">Your Account: {accountObject.web3Account}</Link> */}
+                            <a>Your Account: {accountObject.web3Account}</a>
                         </div>
-                     </h5>
-                
+                        <div className={toggleToggle[toggle]} onClick={doingToggle}></div>
+                    </header> 
+                    <video src={videoUrl} muted loop autoPlay></video>
+                    <div className="overlay"></div>
+                        <div className="text">
+                            <h3>Medicereum</h3>
+                            <p>A Blockchain based decentralized software solution for Pharmaceutical Supply Chain Management</p>
+                        </div>        
                 </section>
-             </div>
+            </div>
              <div className="menu">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Consumer</a></li>
-                <li><a href="/">Supplier</a></li>
-                <li><a href="/">Manufacturer</a></li>
-                <li><a href="/">Contact</a></li>
-            </ul>
-        </div>    
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Manufacturer</a></li>
+                    <li><a href="/">Consumer</a></li>
+                    <li><a href="/">Supplier</a></li>
+                </ul>
+            </div>    
         </>
       
     );

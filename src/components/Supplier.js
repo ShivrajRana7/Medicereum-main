@@ -2,7 +2,8 @@ import {Jumbotron, Container,Card, CardColumns, Button, Row,Col, Form} from 'rea
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component, useState } from 'react';
 import {toast} from 'react-toastify';
-import '../Styles/Main.css'
+import { SUPPLYCHAIN_CONTRACT_DEPLOY_ADDRESS } from '../repository/address';
+import '../Styles/Supplier.css'
 
 const Supplier = ({accountObject,web3Object,supplychainContract}) => { 
 
@@ -16,7 +17,7 @@ const Supplier = ({accountObject,web3Object,supplychainContract}) => {
         console.log(checksupplier["1"]);
         if(checksupplier["1"] == true){
             const transactionParameters = {
-                to: "0xCa20cCa8A595778a3F4110ce54586c4351309383",
+                to: SUPPLYCHAIN_CONTRACT_DEPLOY_ADDRESS,
                 from: accountObject.web3Account,
                 'data': supplychainContract.methods.verifythedata(batch, vote).encodeABI()
             };
@@ -44,12 +45,29 @@ const Supplier = ({accountObject,web3Object,supplychainContract}) => {
         }
     }
     return (
-        <div className="main">
+        <div className="supplier">
             <h1>Supplier</h1>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                To verify the medicine, first scan the QR code and fetch its batch doc.
             </p>
-            <div className="main-inputs">
+            
+            <div className="mt-4">
+                <Form.Group className="mb-4" controlId="formBasicPassword">
+                    <Form.Select aria-label="Default select example" onChange={(e) => { setvote(e.target.value) }}>
+                        <option selected disabled>Is the batch genuine?</option>
+                        <option value="1">Yes</option>
+                        <option value="2">No</option>
+                    </Form.Select>
+                </Form.Group>
+
+                <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Control type="text" placeholder="Enter the scanned batch code" onChange={(e) => { setBatchCode(e.target.value) }} />
+                </Form.Group>
+
+                <Button style={{background:"#5840ba"}} onClick={handleSubmit}>Submit</Button>
+
+            </div>
+            {/* <div className="main-inputs">
                 <Form.Select aria-label="Default select example" onChange={(e) => { setvote(e.target.value) }}>
                 <option>Is the batch OK? </option>
                 <option value="1">Yes</option>
@@ -59,10 +77,12 @@ const Supplier = ({accountObject,web3Object,supplychainContract}) => {
                 <input type="submit" value="Submit" onClick={handleSubmit} />
 
                 <button onClick={(e) => { e.preventDefault(); }}>Scan QR code</button>
-            </div>
+            </div> */}
+            
             {
                 txHash ? <h2>Batch Verified : {batch}</h2> : null
             }
+
         </div>
     )
 }

@@ -3,7 +3,7 @@ import './App.css';
 
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import Manufacture from './components/Manufacture';
+import Manufacturer from './components/Manufacturer';
 import Consumer from './components/Consumer';
 import Supplier from './components/Supplier';
 import { BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom';
@@ -72,10 +72,10 @@ function App() {
     //   </Router> */}
     // </>
     <>
-    {/* <Home accountObject={web3objectDetails} /> */}
-    <Consumer accountObject={web3objectDetails} web3Object = {web3} supplychainContract={supplychainContract} />
+    <Home accountObject={web3objectDetails} />
+    {/* <Consumer accountObject={web3objectDetails} web3Object = {web3} supplychainContract={supplychainContract} /> */}
     {/* <Supplier accountObject={web3objectDetails} web3Object = {web3} supplychainContract={supplychainContract} /> */}
-    {/* <Manufacture accountObject={web3objectDetails} web3Object = {web3} supplychainContract={supplychainContract} /> */}
+    {/* <Manufacturer accountObject={web3objectDetails} web3Object = {web3} supplychainContract={supplychainContract} /> */}
     {/* <Router>
       <div className="App">
         <Routes>
