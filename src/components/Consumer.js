@@ -5,6 +5,7 @@ import QrReader from 'react-qr-reader';
 import { SUPPLYCHAIN_CONTRACT_DEPLOY_ADDRESS } from '../repository/address';
 import { SUPPLYCHAIN_CONTRACT_ABI } from '../repository/supplychain';
 import '../Styles/Consumer.css';
+import Header from './Header';
 
 
 const Consumer = ({accountObject,web3Object,supplychainContract}) => { 
@@ -81,7 +82,7 @@ const Consumer = ({accountObject,web3Object,supplychainContract}) => {
     }
    
     return (
-        
+
         <div className="consumer">
             <h1>Consumer</h1>
             <p>

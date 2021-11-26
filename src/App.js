@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import './App.css';
 
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 import Home from './components/Home';
 import Manufacturer from './components/Manufacturer';
 import Consumer from './components/Consumer';
@@ -71,18 +71,22 @@ function App() {
     //   </Router>
     // </>
     <>
-    <Home accountObject={web3objectDetails} />
+    {/* <Header accountObject={web3objectDetails} /> */}
+    {/* <Home accountObject={web3objectDetails} /> */}
     {/* <Consumer accountObject={web3objectDetails} web3Object = {web3} supplychainContract={supplychainContract} /> */}
     {/* <Supplier accountObject={web3objectDetails} web3Object = {web3} supplychainContract={supplychainContract} /> */}
     {/* <Manufacturer accountObject={web3objectDetails} web3Object = {web3} supplychainContract={supplychainContract} /> */}
-    {/* <Router>
-      <div className="App">
+    <Router>
+      <div>
         <Routes>
-          <Route exact path= "/" element={<Home/>} />
-          <Route exact path= "/consumer" render={(props) => <Consumer accountObject={web3objectDetails} web3Object = {web3} supplychainContract={supplychainContract} />} />
+          <Route exact path= "/" element={<Home accountObject={web3objectDetails} />} />
+          <Route exact path= "/consumer" element={ <Consumer accountObject={web3objectDetails} web3Object = {web3} supplychainContract={supplychainContract} />} />
+          <Route exact path= "/supplier" element={<Supplier accountObject={web3objectDetails} web3Object = {web3} supplychainContract={supplychainContract} />} />
+          <Route exact path= "/manufacturer" element={<Manufacturer accountObject={web3objectDetails} web3Object = {web3} supplychainContract={supplychainContract} />} />
         </Routes>
       </div>
-    </Router> */}
+    </Router>
+
     </>
   );
 }
