@@ -108,7 +108,7 @@ const MapComponent = ({Mapdata}) => {
                     <td>{el.Date}</td>
                     </tr>
                 </tbody>
-        </Table>
+            </Table>
         ))}
         </div>
     )
