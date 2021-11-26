@@ -59,7 +59,7 @@ const Supplier = ({accountObject,web3Object,supplychainContract}) => {
                     <Form.Select aria-label="Default select example" onChange={(e) => { setvote(e.target.value) }}>
                         <option selected disabled>Is the batch genuine?</option>
                         <option value="1">Yes</option>
-                        <option value="2">No</option>
+                        <option value="0">No</option>
                     </Form.Select>
                 </Form.Group>
 
