@@ -16,16 +16,12 @@ const Consumer = ({accountObject,web3Object,supplychainContract}) => {
     const [position, setposition] = useState('');
     const [datetime, setdatetime] = useState('');
     const [verifycount, setverifycount] = useState('');
-    const [vermap, setvermap] = useState({data: [{
-        Position: "",
-        Address: "",
-        Date: "",
-        VerificationStatus: ""
-    }]});
+    const [vermap, setvermap] = useState({data: []});
     const [batch, setBatchCode] = useState('');
     const [scanResultFile, setScanResultFile] = useState('');
     const [scanResultWebCam, setScanResultWebCam] =  useState('');
     const [selectedOpt,setSelectedOpt] = useState('');
+
     
     async function handleSubmit(event) {
         //alert(batch);
@@ -51,7 +47,7 @@ const Consumer = ({accountObject,web3Object,supplychainContract}) => {
                 verification.push({
                     Position: data["0"],
                     Address: data["1"],
-                    Date: data["2"],
+                    Date: Date(data["2"] * 1000).toLocaleString(),
                     VerificationStatus: data["3"]
                 })
             }
@@ -119,10 +115,11 @@ const Consumer = ({accountObject,web3Object,supplychainContract}) => {
             
             <Button style={{background:"#5840ba"}} onClick={handleSubmit}>Submit</Button>
             </div>
-                        
-               {medname? <h2>Medicine Name : {medname}</h2> : null}
-               {batchdoc? <h2>Batch Doc : <a href={"https://ipfs.infura.io/ipfs/"+ batchdoc} target="_blank">Doc Link</a></h2> : null}
+                <div className="mt-3">       
+               {medname? <h3>Medicine Name : {medname}</h3> : null}
+               {batchdoc? <h3>Batch Doc : <a href={"https://ipfs.infura.io/ipfs/"+ batchdoc} target="_blank">Doc Link</a></h3> : null}
                {medname? <MapComponent Mapdata={vermap}/> : null}
+               </div> 
         </div>
     )
 }

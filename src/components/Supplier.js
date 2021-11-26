@@ -11,10 +11,11 @@ const Supplier = ({accountObject,web3Object,supplychainContract}) => {
     let txHash = '';
     const [vote, setvote] = useState('');
     const [batch, setBatchCode] = useState('')
+    toast.configure();
 
     async function handleSubmit(event) {
         var checksupplier = await supplychainContract.methods.distributors(accountObject.web3Account).call();
-        console.log(checksupplier["1"]);
+        // console.log(checksupplier["1"]);
         if(checksupplier["1"] == true){
             const transactionParameters = {
                 to: SUPPLYCHAIN_CONTRACT_DEPLOY_ADDRESS,
@@ -28,7 +29,6 @@ const Supplier = ({accountObject,web3Object,supplychainContract}) => {
                         method: 'eth_sendTransaction',
                         params: [transactionParameters],
                     });
-                    
                 return {
                     success: true,
                     status: toast('Batch Verified!')
@@ -36,7 +36,7 @@ const Supplier = ({accountObject,web3Object,supplychainContract}) => {
             } catch (error) {
                 return {
                     success: false,
-                    status: "😥 Something went wrong: " + error.message
+                    status: toast('The transaction will not be completed as you are not a verified supplier!')
                 }
             }
         }
@@ -79,9 +79,8 @@ const Supplier = ({accountObject,web3Object,supplychainContract}) => {
                 <button onClick={(e) => { e.preventDefault(); }}>Scan QR code</button>
             </div> */}
             
-            {
-                txHash ? <h2>Batch Verified : {batch}</h2> : null
-            }
+                {txHash ? <h2>Batch Verified : {batch}</h2> : null}
+            
 
         </div>
     )

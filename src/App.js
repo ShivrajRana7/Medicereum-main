@@ -60,16 +60,15 @@ function App() {
 
   return (
     // <>
-    //  <Consumer />
-    //   {/* <Router>
+    //   <Router>
     
     //     <Routes>
-    //       <Link to="/"><Route exact path="/" element={<Home />} /></Link>
-    //       <Link to="/Manufacture"><Route exact path="/Manufacture" element={<Manufacture />} /></Link>
-    //       <Link to="/Consumer"><Route exact path="/Consumer" element={<Consumer />} /></Link>
-    //       <Link to="/Supplier"><Route exact path="/Supplier" element={<Supplier />} /></Link>
+    //       <Link to="/"><Route exact path="/" element={<Home accountObject={web3objectDetails} />} /></Link>
+    //       <Link to="/Manufacturer"><Route exact path="/Manufacturer" element={<Manufacturer accountObject={web3objectDetails} web3Object = {web3} supplychainContract={supplychainContract} />} /></Link>
+    //       <Link to="/Consumer"><Route exact path="/Consumer" element={<Consumer accountObject={web3objectDetails} web3Object = {web3} supplychainContract={supplychainContract} />} /></Link>
+    //       <Link to="/Supplier"><Route exact path="/Supplier" element={<Supplier accountObject={web3objectDetails} web3Object = {web3} supplychainContract={supplychainContract} />} /></Link>
     //     </Routes>
-    //   </Router> */}
+    //   </Router>
     // </>
     <>
     <Home accountObject={web3objectDetails} />

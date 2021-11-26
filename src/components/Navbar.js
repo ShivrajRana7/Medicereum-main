@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/logo.svg'
+// import logo from '../assets/logo.svg'
 import { Navbar, Nav, Container } from 'react-bootstrap';
 // import Home from './components/Home';
 // import Manufacture from './components/Manufacture';
