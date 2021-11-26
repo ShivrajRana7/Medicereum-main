@@ -23,7 +23,8 @@ const Consumer = ({accountObject,web3Object,supplychainContract}) => {
     const [scanResultWebCam, setScanResultWebCam] =  useState('');
     const [selectedOpt,setSelectedOpt] = useState('');
 
-    
+    toast.configure();
+
     async function handleSubmit(event) {
         //alert(batch);
         console.log(supplychainContract);
@@ -38,7 +39,7 @@ const Consumer = ({accountObject,web3Object,supplychainContract}) => {
 
         if(count<=0){
             console.log("Inside that oops part");
-            toast("This medicine hasn't been verified yet!");
+            toast("This is not a verified medicine!");
         }
         else{
             for(var i = count - 1 ;i>=0; i--){
@@ -54,16 +55,16 @@ const Consumer = ({accountObject,web3Object,supplychainContract}) => {
             }
         setvermap({data:verification});
         }
-    }
-    const handleErrorFile = (error) => {
-        console.log(error);
-      }
-      const handleScanFile = (result) => {
-          if (result) {
-            setScanResultFile(result);
-              
-          }
-      }
+        }
+        const handleErrorFile = (error) => {
+            console.log(error);
+        }
+        const handleScanFile = (result) => {
+            if (result) {
+                setScanResultFile(result);
+                
+            }
+        }
       const onScanFile = () => {
         qrRef.current.openImageDialog();
       }
@@ -73,13 +74,10 @@ const Consumer = ({accountObject,web3Object,supplychainContract}) => {
       const handleScanWebCam = (result) => {
         if (result){
             setScanResultWebCam(result);
-            console.log(result);
-           
-            
-        
-           
+            console.log(result);   
         }
     }
+
    
     return (
 
@@ -113,12 +111,14 @@ const Consumer = ({accountObject,web3Object,supplychainContract}) => {
            <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Control type="text" placeholder="Enter the scanned batch code" onChange={(e) => { setBatchCode(e.target.value)}} />
             </Form.Group>
-            
-            <Button style={{background:"#5840ba"}} onClick={handleSubmit}>Submit</Button>
+            <div style = {{display:'flex', justifyContent: 'space-between'}}>
+                <Button style={{background:"#5840ba"}} onClick={handleSubmit}>Submit</Button>
+                <Button variant="secondary" onClick={() => {window.location.reload()}}>Reset</Button>
             </div>
-                <div className="mt-3">       
-               {medname? <h3>Medicine Name : {medname}</h3> : null}
-               {batchdoc? <h3>Batch Doc : <a href={"https://ipfs.infura.io/ipfs/"+ batchdoc} target="_blank">Doc Link</a></h3> : null}
+            </div>
+                <div className="mt-3"> 
+                    {medname? <h4>Medicine Name : {medname}</h4> : null}
+                    {batchdoc? <h4>Batch Doc : <a href={"https://ipfs.infura.io/ipfs/"+ batchdoc} target="_blank">Link</a></h4> : null}
                {medname? <MapComponent Mapdata={vermap}/> : null}
                </div> 
         </div>
