@@ -7,14 +7,14 @@ import {useState }from 'react';
 
 const Navbar1 = () => {
     return(
-        <Navbar bg="light" variant="light">
+        <Navbar style={{background:"#5840ba"}} variant="dark">
             <Container>
-                <Nav className="me-auto">
-                    <Nav.Link href="/" style={{fontFamily:"Segoe UI", fontSize:"1rem"}}>Home</Nav.Link>
-                    <Nav.Link href="/manufacturer" style={{fontFamily:"Segoe UI", fontSize:"1rem"}}>Manufacturer</Nav.Link>
-                    <Nav.Link href="/consumer" style={{fontFamily:"Segoe UI", fontSize:"1rem"}}>Consumer</Nav.Link>
-                    <Nav.Link href="/supplier" style={{fontFamily:"Segoe UI", fontSize:"1rem"}}>Supplier</Nav.Link>
-                </Nav>
+            <Navbar.Brand href="/">Home</Navbar.Brand>
+            <Nav className="me-auto">
+            <Nav.Link href="/manufacturer">Manufacturer</Nav.Link>
+            <Nav.Link href="/consumer">Consumer</Nav.Link>
+            <Nav.Link href="/supplier">Supplier</Nav.Link>
+            </Nav>
             </Container>
         </Navbar>
     )
