@@ -7,7 +7,7 @@ import {useState }from 'react';
 
 const Navbar1 = () => {
     return(
-        <Navbar style={{background:"#5840ba"}} variant="light">
+        <Navbar style={{background:"#5840ba"}} variant="dark">
             <Container>
             <Navbar.Brand href="/">Home</Navbar.Brand>
             <Nav className="me-auto">
