@@ -27,18 +27,6 @@ const Manufacturer = ({accountObject,web3Object,supplychainContract}) => {
 
     toast.configure();
 
-    // Form Validation
-    const [validated, setValidated] = useState(false);
-          
-    const handleSubmit = (event) => {
-        const form = event.currentTarget;
-        if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-            } 
-        setValidated(true);
-    }; 
-    
     async function handleFileInput(e){
         console.log('here')
    
@@ -169,57 +157,56 @@ const Manufacturer = ({accountObject,web3Object,supplychainContract}) => {
 
             <div className="form mt-4">
                 
-                <Form classname="batchh" style={{display: selectedOpt == "batch" ? "block" : "none"}} noValidate validated={validated} onSubmit={handleSubmit} >
+                <Form classname="batchh" style={{display: selectedOpt == "batch" ? "block" : "none"}}>
                     
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>New Batch</Form.Label>
-                        <Form.Control type="text" placeholder="Enter the new batch code" onChange={(e) => { setBatchCode(e.target.value) }} required />
-                        <Form.Control.Feedback type="invalid">Please enter the batch code</Form.Control.Feedback>
+                        <Form.Control type="text" placeholder="Enter the new batch code" onChange={(e) => { setBatchCode(e.target.value) }} />
                     </Form.Group>
                     
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Medicine</Form.Label>
-                        <Form.Control type="text" placeholder="Enter the medicine name" onChange={(e) => { setmedname(e.target.value) }} required />
-                        <Form.Control.Feedback type="invalid">Please enter the medicine name</Form.Control.Feedback>
+                        <Form.Control type="text" placeholder="Enter the medicine name" onChange={(e) => { setmedname(e.target.value) }} />
+                        
                     </Form.Group>
                     
                     <Form.Group controlId="formFile" className="mb-2">
                         <Form.Label>Upload Batch Doc : </Form.Label>
-                        <Form.Control type="file" onChange={(e)=> handleFileInput(e)} required />
-                        <Form.Control.Feedback type="invalid">Please choose a file to upload</Form.Control.Feedback>
+                        <Form.Control type="file" onChange={(e)=> handleFileInput(e)} />
+                        
                     </Form.Group>
 
                     <p classname="text-2" style={{letterSpacing:"1px"}}>Upload Status:{fileUploadStatus}</p>
                     
-                    <Button type="submit" style={{background:"#5840ba"}} classname="mb-3" onClick={handleSubmission}>Submit</Button>
+                    <Button style={{background:"#5840ba"}} classname="mb-3" onClick={handleSubmission}>Submit</Button>
                 
                 </Form>
                 
-                <Form style={{display: selectedOpt == "supplier" ? "block" : "none"}} noValidate validated={validated} onSubmit={handleSubmit}>
+                <Form style={{display: selectedOpt == "supplier" ? "block" : "none"}}>
                     
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Add Supplier</Form.Label>
-                        <Form.Control type="text" placeholder="Enter the ethereum address of supplier" onChange={(e) => { setaddr(e.target.value) }} required />
-                        <Form.Control.Feedback type="invalid">Please enter the supplier's ethereum address</Form.Control.Feedback>
+                        <Form.Control type="text" placeholder="Enter the ethereum address of supplier" onChange={(e) => { setaddr(e.target.value) }} />
+                        
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Type</Form.Label>
-                        <Form.Control type="text" placeholder="Example: Global/Local #Supplier" onChange={(e) => { settype(e.target.value) }} required />
-                        <Form.Control.Feedback type="invalid">Please enter the supplier's type</Form.Control.Feedback>
+                        <Form.Control type="text" placeholder="Example: Global/Local #Supplier" onChange={(e) => { settype(e.target.value) }} />
+                        
                     </Form.Group>
 
                     <Form.Group className="mb-4" controlId="formBasicPassword">
                         <Form.Label>Position</Form.Label>
                         <Form.Select aria-label="Default select example" onChange={(e) => { settype(e.target.value) }}>
                             <option selected disabled>Type of Supplier</option>
-                            <option value="1" required>Distributor</option>
-                            <option value="0" required>Retailer</option>
+                            <option value="1">Distributor</option>
+                            <option value="0">Retailer</option>
                         </Form.Select>
-                        <Form.Control.Feedback type="invalid">Please choose a type of supplier</Form.Control.Feedback>
+                        
                     </Form.Group>
 
-                    <Button type="submit" style={{background:"#5840ba"}} onClick={handleSupplier}>Add</Button>
+                    <Button style={{background:"#5840ba"}} onClick={handleSupplier}>Add</Button>
                 </Form>
             </div>
 
