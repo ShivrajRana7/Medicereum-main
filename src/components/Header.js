@@ -1,5 +1,4 @@
 import React from 'react'
-// import logo from '../assets/logo.svg'
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Logo from '../assets/Logo.png'

@@ -89,6 +89,7 @@ const Consumer = ({accountObject,web3Object,supplychainContract}) => {
             </p>
             
            <div className="mt-4">
+           
            <Form.Group className="mb-4" controlId="formBasicPassword">
                 <Form.Select aria-label="Default select example" onChange={(e) => {setSelectedOpt(e.target.value);}}>
                     <option selected disabled>Choose an option to scan QR</option>
@@ -110,12 +111,13 @@ const Consumer = ({accountObject,web3Object,supplychainContract}) => {
             </Form.Group>
             <br />
            <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Control type="text" placeholder="Enter the scanned batch code" onChange={(e) => { setBatchCode(e.target.value)}} />
+                <Form.Control type="text" placeholder="Enter the scanned batch code" onChange={(e) => { setBatchCode(e.target.value)}}/>
             </Form.Group>
             <div style = {{display:'flex', justifyContent: 'space-between'}}>
                 <Button style={{background:"#5840ba"}} onClick={handleSubmit}>Submit</Button>
                 <Button variant="secondary" onClick={() => {window.location.reload()}}>Reset</Button>
             </div>
+
             </div>
                 <div className="mt-3"> 
                     {medname? <h4>Medicine Name : {medname}</h4> : null}

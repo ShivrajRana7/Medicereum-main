@@ -15,6 +15,7 @@ const Supplier = ({accountObject,web3Object,supplychainContract}) => {
     toast.configure();
 
     async function handleSubmit(event) {
+        
         var checksupplier = await supplychainContract.methods.distributors(accountObject.web3Account).call();
         // console.log(checksupplier["1"]);
         if(checksupplier["1"] == true){
@@ -70,17 +71,6 @@ const Supplier = ({accountObject,web3Object,supplychainContract}) => {
                 <Button style={{background:"#5840ba"}} onClick={handleSubmit}>Submit</Button>
 
             </div>
-            {/* <div className="main-inputs">
-                <Form.Select aria-label="Default select example" onChange={(e) => { setvote(e.target.value) }}>
-                <option>Is the batch OK? </option>
-                <option value="1">Yes</option>
-                <option value="2">No</option>
-                </Form.Select>
-                <input type="text" placeholder="Enter your new batch code" onChange={(e) => { setBatchCode(e.target.value) }} />
-                <input type="submit" value="Submit" onClick={handleSubmit} />
-
-                <button onClick={(e) => { e.preventDefault(); }}>Scan QR code</button>
-            </div> */}
             
                 {txHash ? <h2>Batch Verified : {batch}</h2> : null}
         </div>

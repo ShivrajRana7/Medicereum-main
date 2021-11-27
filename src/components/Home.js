@@ -34,7 +34,7 @@ const Home = ({accountObject}) => {
                     <video src={videoUrl} muted loop autoPlay></video>
                     <div className="overlay"></div>
                         <div className="text">
-                            <h3>Medicereum</h3>
+                            <h3>Medecerium</h3>
                             <p>A Blockchain based decentralized software solution for Pharmaceutical Supply Chain Management</p>
                         </div>
                     </section>    
