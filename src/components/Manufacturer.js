@@ -127,12 +127,15 @@ const Manufacturer = ({accountObject,web3Object,supplychainContract}) => {
                     method: 'eth_sendTransaction',
                     params: [transactionParameters],
                 });
+
+                console.log("HERE")
                 
             return {
                 success: true,
                 status: toast('New Supplier has been added!')
             }
         } catch (error) {
+            console.log("HERE ERROR", error.message)
             return {
                 success: false,
                 status: toast("Something went wrong")
@@ -198,6 +201,12 @@ const Manufacturer = ({accountObject,web3Object,supplychainContract}) => {
                         <Form.Label>Add Supplier</Form.Label>
                         <Form.Control type="text" placeholder="Enter the ethereum address of supplier" onChange={(e) => { setaddr(e.target.value) }} required />
                         <Form.Control.Feedback type="invalid">Please enter the supplier's ethereum address</Form.Control.Feedback>
+                    </Form.Group>
+
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                        <Form.Label>Type</Form.Label>
+                        <Form.Control type="text" placeholder="Example: Global/Local #Supplier" onChange={(e) => { settype(e.target.value) }} required />
+                        <Form.Control.Feedback type="invalid">Please enter the supplier's type</Form.Control.Feedback>
                     </Form.Group>
 
                     <Form.Group className="mb-4" controlId="formBasicPassword">
