@@ -191,13 +191,13 @@ const Manufacturer = ({accountObject,web3Object,supplychainContract}) => {
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Label>Type</Form.Label>
-                        <Form.Control type="text" placeholder="Example: Global/Local #Supplier" onChange={(e) => { settype(e.target.value) }} />
+                        <Form.Label>Position</Form.Label>
+                        <Form.Control type="text" placeholder="Example: Global/Local #Supplier" onChange={(e) => { setposition(e.target.value) }} />
                         
                     </Form.Group>
 
                     <Form.Group className="mb-4" controlId="formBasicPassword">
-                        <Form.Label>Position</Form.Label>
+                        <Form.Label>Type</Form.Label>
                         <Form.Select aria-label="Default select example" onChange={(e) => { settype(e.target.value) }}>
                             <option selected disabled>Type of Supplier</option>
                             <option value="1">Distributor</option>
