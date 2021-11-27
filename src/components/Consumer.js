@@ -49,7 +49,7 @@ const Consumer = ({accountObject,web3Object,supplychainContract}) => {
                 verification.push({
                     Position: data["0"],
                     Address: data["1"],
-                    Date: Date(data["2"] * 1000).toLocaleString(),
+                    Date: new Date(data["2"] * 1000).toLocaleString(),
                     VerificationStatus: data["3"]
                 })
             }

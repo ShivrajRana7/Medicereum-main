@@ -17,8 +17,10 @@ const Supplier = ({accountObject,web3Object,supplychainContract}) => {
     async function handleSubmit(event) {
         
         var checksupplier = await supplychainContract.methods.distributors(accountObject.web3Account).call();
+        var checksupplier2 = await supplychainContract.methods.retailer(accountObject.web3Account).call();
         // console.log(checksupplier["1"]);
-        if(checksupplier["1"] == true){
+        console.log("Retailer: ", checksupplier2["1"])
+        if(checksupplier["1"] == true || checksupplier2["1"] == true){
             const transactionParameters = {
                 to: SUPPLYCHAIN_CONTRACT_DEPLOY_ADDRESS,
                 from: accountObject.web3Account,
