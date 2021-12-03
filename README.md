@@ -32,29 +32,25 @@
   <a href="https://github.com/ShivrajRana7/frontend-main">
     <img src="src/assets/logo.svg" alt="Logo" width="80" height="80">
   </a>
-    <h2 align="center">CricShot</h2>
-  <h3 align="center">A revolutionary new experience in which jaw-dropping cricket moments and unforgettable highlights become collectibles that you can own forever!</h3>
+    <h2 align="center">MEDICEREUM</h2>
+  <h3 align="center">A revolutionary blockchain based efficient pharmaceutical supply chain tracking!</h3>
    <h4 align="center">By</h4>
-  <h3 align="center">Team Genesis</h3>
-   <h3 align="center">PANDIT DEENDAYAL ENERGY UNIVERSITY ,GANDHINAGAR </h3>
+  <h3 align="center">Students of Information and Communication Technology at</h3>
+   <h3 align="center">PANDIT DEENDAYAL ENERGY UNIVERSITY, GANDHINAGAR </h3>
 
   <p align="center">
-    CricShot is a blockchain-based platform that allows fans to buy, sell and trade numbered versions of specific NFTs through OpenSea by deploying them on nft.storage of Filecoin, video highlights of IPL and some more major tournaments. Once you purchase an NFT, those highlights go into your encrypted, secure highlight wallet to be "showcased" or re-sold on OpenSea.
-
-Right after a match ends, CricShot mints new NFTs on Polygon Network which will be done season to season.
-
-CricShot, besides a NFT minter, is also a multi-purpose Twitter bot that can trade the best moments of cricket world besides pushing forward the user engagement of a decentralized ecosystem through portraying virtual moments, powered by Polygon Network.
-
-Also, CricShot Twitter bot is here to automate tasks for you the really cool thing about our NFT giveaways is that it actually picks "RANDOM" users using the ChainLink's VRF, to spice up, after processing the random number from the API, we are allocating them onto a dictionary object containing tokenIDs of NFT, which through the processed number, will be eligible to take it away, dope isn’t it? To put the verifiable randomness of blockchain to use.
+    Medicereum is full proof system for Medical Supply chain using a Decentralized structure: Blockchain which provides essential benefits like security and privacy, transparency, immutability and innovation.
+    if an issue (such as a counterfeit drug or even just a faulty or expired drug) is detected, the user could look at all previous data entries, touch points, locations and timestamps to trace all the way back to find the origin of the product, the specific manufacturer and even the specific batch that it came from.
+    This not only assures authenticity over and above a normal manual database which can be more easily tampered with and where individuals may be able to edit or remove important information, but also enables ways of verifying that an entity that has handled the product has complied with regulatory requirements.
 <br />
-<a href="https://github.com/ShivrajRana7/CricNFT"><strong>Explore the docs »</strong></a>
+<a href="https://github.com/ShivrajRana7/frontend-main"><strong>Explore the docs »</strong></a>
 <br />
 <br />
-<a href="https://github.com/ShivrajRana7/CricNFT">View Demo</a>
+<a href="https://github.com/ShivrajRana7/frontend-main">View Demo</a>
 ·
-<a href="https://github.com/ShivrajRana7/CricNFT/issues">Report Bug</a>
+<a href="https://github.com/ShivrajRana7/frontend-main/issues">Report Bug</a>
 ·
-<a href="https://github.com/ShivrajRana7/CricNFT/issues">Request Feature</a>
+<a href="https://github.com/ShivrajRana7/frontend-main/issues">Request Feature</a>
 
   </p>
 </p>
@@ -89,11 +85,9 @@ Also, CricShot Twitter bot is here to automate tasks for you the really cool thi
 - [Web3py]()
 - [Web3js]()
 - [Solidity]()
-- [Filcoin's nft.storage]()
 - [Polygon]()
 - [Chainlink]()
 - [REACT]()
-- [tweepy]()
 <!-- GETTING STARTED -->
 
 ## Getting Started
@@ -108,7 +102,7 @@ To be Updated Soon
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/ShivrajRana7/CricNFT.git
+   git clone https://github.com/ShivrajRana7/frontend-main.git
    ```
 2. To Be Updated Soon
 
@@ -116,7 +110,7 @@ To be Updated Soon
 
 ## Roadmap
 
-See the [open issues](https://github.com/ShivrajRana7/CricNFT/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/ShivrajRana7/frontend-main/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 
@@ -142,9 +136,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/krishbhanushal8) - bhanushali123krish@gmail.com
-
-Project Link: [https://github.com/ShivrajRana7/CricNFT](https://github.com/ShivrajRana7/CricNFT)
+Project Link: [https://github.com/ShivrajRana7/frontend-main](https://github.com/ShivrajRana7/frontend-main)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
