@@ -29,7 +29,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/ShivrajRana7/frontend-main/src/assets/logo.svg">
+  <a href="https://github.com/ShivrajRana7/frontend-main/blob/master/src/assets/logo.svg">
     <img src="images/CS.png" alt="Logo" width="80" height="80">
   </a>
     <h2 align="center">CricShot</h2>
