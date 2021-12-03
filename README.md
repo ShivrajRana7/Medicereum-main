@@ -40,7 +40,7 @@
 
   <p align="center">
     Medicereum is full proof system for Medical Supply chain using a Decentralized structure: Blockchain which provides essential benefits like security and privacy, transparency, immutability and innovation.
-    if an issue (such as a counterfeit drug or even just a faulty or expired drug) is detected, the user could look at all previous data entries, touch points, locations and timestamps to trace all the way back to find the origin of the product, the specific manufacturer and even the specific batch that it came from.
+    If an issue (such as a counterfeit drug or even just a faulty or expired drug) is detected, the user could look at all previous data entries, touch points, locations and timestamps to trace all the way back to find the origin of the product, the specific manufacturer and even the specific batch that it came from.
     This not only assures authenticity over and above a normal manual database which can be more easily tampered with and where individuals may be able to edit or remove important information, but also enables ways of verifying that an entity that has handled the product has complied with regulatory requirements.
 <br />
 <a href="https://github.com/ShivrajRana7/frontend-main"><strong>Explore the docs »</strong></a>
