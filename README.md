@@ -30,7 +30,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/ShivrajRana7/frontend-main">
-    <img src="src/assests/logo.svg" alt="Logo" width="80" height="80">
+    <img src="src/assets/logo.svg" alt="Logo" width="80" height="80">
   </a>
     <h2 align="center">CricShot</h2>
   <h3 align="center">A revolutionary new experience in which jaw-dropping cricket moments and unforgettable highlights become collectibles that you can own forever!</h3>
