@@ -1,70 +1,162 @@
-# Getting Started with Create React App
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Thanks again! Now go create something AMAZING! :D
+***
+***
+***
+*** To avoid retyping too much info. Do a search and replace for the following:
+*** github_username, repo_name, twitter_handle, email, project_title, project_description
+-->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
 
-## Available Scripts
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 
-In the project directory, you can run:
 
-### `yarn start`
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/ShivrajRana7/CricNFT">
+    <img src="images/CS.png" alt="Logo" width="80" height="80">
+  </a>
+    <h2 align="center">CricShot</h2>
+  <h3 align="center">A revolutionary new experience in which jaw-dropping cricket moments and unforgettable highlights become collectibles that you can own forever!</h3>
+   <h4 align="center">By</h4>
+  <h3 align="center">Team Genesis</h3>
+   <h3 align="center">PANDIT DEENDAYAL ENERGY UNIVERSITY ,GANDHINAGAR </h3>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <p align="center">
+    CricShot is a blockchain-based platform that allows fans to buy, sell and trade numbered versions of specific NFTs through OpenSea by deploying them on nft.storage of Filecoin, video highlights of IPL and some more major tournaments. Once you purchase an NFT, those highlights go into your encrypted, secure highlight wallet to be "showcased" or re-sold on OpenSea.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Right after a match ends, CricShot mints new NFTs on Polygon Network which will be done season to season.
 
-### `yarn test`
+CricShot, besides a NFT minter, is also a multi-purpose Twitter bot that can trade the best moments of cricket world besides pushing forward the user engagement of a decentralized ecosystem through portraying virtual moments, powered by Polygon Network.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Also, CricShot Twitter bot is here to automate tasks for you the really cool thing about our NFT giveaways is that it actually picks "RANDOM" users using the ChainLink's VRF, to spice up, after processing the random number from the API, we are allocating them onto a dictionary object containing tokenIDs of NFT, which through the processed number, will be eligible to take it away, dope isn’t it? To put the verifiable randomness of blockchain to use.
+<br />
+<a href="https://github.com/ShivrajRana7/CricNFT"><strong>Explore the docs »</strong></a>
+<br />
+<br />
+<a href="https://github.com/ShivrajRana7/CricNFT">View Demo</a>
+·
+<a href="https://github.com/ShivrajRana7/CricNFT/issues">Report Bug</a>
+·
+<a href="https://github.com/ShivrajRana7/CricNFT/issues">Request Feature</a>
 
-### `yarn build`
+  </p>
+</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    
+  </ol>
+</details>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Built With
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Web3py]()
+- [Web3js]()
+- [Solidity]()
+- [Filcoin's nft.storage]()
+- [Polygon]()
+- [Chainlink]()
+- [REACT]()
+- [tweepy]()
+<!-- GETTING STARTED -->
 
-### `yarn eject`
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To get a local copy up and running follow these simple steps.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To be Updated Soon
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Installation
 
-## Learn More
+1. Clone the repo
+   ```sh
+   git clone https://github.com/ShivrajRana7/CricNFT.git
+   ```
+2. To Be Updated Soon
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<!-- ROADMAP -->
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Roadmap
 
-### Code Splitting
+See the [open issues](https://github.com/ShivrajRana7/CricNFT/issues) for a list of proposed features (and known issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- CONTRIBUTING -->
 
-### Analyzing the Bundle Size
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-### Making a Progressive Web App
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+If you become a Collaborator Please Refer `Collaborator` for more information
 
-### Advanced Configuration
+<!-- LICENSE -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
+Distributed under the MIT License. See `LICENSE` for more information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<!-- CONTACT -->
 
-### `yarn build` fails to minify
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Your Name - [@twitter_handle](https://twitter.com/krishbhanushal8) - bhanushali123krish@gmail.com
+
+Project Link: [https://github.com/ShivrajRana7/CricNFT](https://github.com/ShivrajRana7/CricNFT)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/ShivrajRana7/frontend-main.svg?style=for-the-badge
+[contributors-url]: https://github.com/ShivrajRana7/frontend-main/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/ShivrajRana7/frontend-main.svg?style=for-the-badge
+[forks-url]: https://github.com/ShivrajRana7/frontend-main/network/members
+[stars-shield]: https://img.shields.io/github/stars/ShivrajRana7/frontend-main.svg?style=for-the-badge
+[stars-url]: https://github.com/ShivrajRana7/frontend-main/stargazers
+[issues-shield]: https://img.shields.io/github/issues/ShivrajRana7/frontend-main.svg?style=for-the-badge
+[issues-url]: https://github.com/ShivrajRana7/frontend-main/issues
+[license-shield]: https://img.shields.io/github/license/ShivrajRana7/frontend-main.svg?style=for-the-badge
+[license-url]: https://github.com/ShivrajRana7/frontend-main/blob/master/LICENSE.txt
+
