@@ -28,7 +28,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/ShivrajRana7/frontend-main">
+  <a href="https://github.com/ShivrajRana7/Medicereum-main">
     <img src="src/assets/Logo.png" alt="Logo" width="80" height="80">
   </a>
     <h2 align="center">MEDICEREUM</h2>
@@ -42,14 +42,14 @@
     If an issue (such as a counterfeit drug or even just a faulty or expired drug) is detected, the user could look at all previous data entries, touch points, locations and timestamps to trace all the way back to find the origin of the product, the specific manufacturer and even the specific batch that it came from.
     This not only assures authenticity over and above a normal manual database which can be more easily tampered with and where individuals may be able to edit or remove important information, but also enables ways of verifying that an entity that has handled the product has complied with regulatory requirements.
 <br />
-<a href="https://github.com/ShivrajRana7/frontend-main"><strong>Explore the docs »</strong></a>
+<a href="https://github.com/ShivrajRana7/Medicereum-main"><strong>Explore the docs »</strong></a>
 <br />
 <br />
-<a href="https://github.com/ShivrajRana7/frontend-main">View Demo</a>
+<a href="https://github.com/ShivrajRana7/Medicereum-main">View Demo</a>
 ·
-<a href="https://github.com/ShivrajRana7/frontend-main/issues">Report Bug</a>
+<a href="https://github.com/ShivrajRana7/Medicereum-main/issues">Report Bug</a>
 ·
-<a href="https://github.com/ShivrajRana7/frontend-main/issues">Request Feature</a>
+<a href="https://github.com/ShivrajRana7/Medicereum-main/issues">Request Feature</a>
 
   </p>
 </p>
@@ -101,7 +101,7 @@ To be Updated Soon
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/ShivrajRana7/frontend-main.git
+   git clone https://github.com/ShivrajRana7/Medicereum-main.git
    ```
 2. To Be Updated Soon
 
@@ -109,7 +109,7 @@ To be Updated Soon
 
 ## Roadmap
 
-See the [open issues](https://github.com/ShivrajRana7/frontend-main/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/ShivrajRana7/Medicereum-main/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 
@@ -135,18 +135,18 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Project Link: [https://github.com/ShivrajRana7/frontend-main](https://github.com/ShivrajRana7/frontend-main)
+Project Link: [https://github.com/ShivrajRana7/Medicereum-main](https://github.com/ShivrajRana7/Medicereum-main)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/ShivrajRana7/frontend-main.svg?style=for-the-badge
-[contributors-url]: https://github.com/ShivrajRana7/frontend-main/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/ShivrajRana7/frontend-main.svg?style=for-the-badge
-[forks-url]: https://github.com/ShivrajRana7/frontend-main/network/members
-[stars-shield]: https://img.shields.io/github/stars/ShivrajRana7/frontend-main.svg?style=for-the-badge
-[stars-url]: https://github.com/ShivrajRana7/frontend-main/stargazers
-[issues-shield]: https://img.shields.io/github/issues/ShivrajRana7/frontend-main.svg?style=for-the-badge
-[issues-url]: https://github.com/ShivrajRana7/frontend-main/issues
-[license-shield]: https://img.shields.io/github/license/ShivrajRana7/frontend-main.svg?style=for-the-badge
-[license-url]: https://github.com/ShivrajRana7/frontend-main/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/ShivrajRana7/Medicereum-main.svg?style=for-the-badge
+[contributors-url]: https://github.com/ShivrajRana7/Medicereum-main/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/ShivrajRana7/Medicereum-main.svg?style=for-the-badge
+[forks-url]: https://github.com/ShivrajRana7/Medicereum-main/network/members
+[stars-shield]: https://img.shields.io/github/stars/ShivrajRana7/Medicereum-main.svg?style=for-the-badge
+[stars-url]: https://github.com/ShivrajRana7/Medicereum-main/stargazers
+[issues-shield]: https://img.shields.io/github/issues/ShivrajRana7/Medicereum-main.svg?style=for-the-badge
+[issues-url]: https://github.com/ShivrajRana7/Medicereum-main/issues
+[license-shield]: https://img.shields.io/github/license/ShivrajRana7/Medicereum-main.svg?style=for-the-badge
+[license-url]: https://github.com/ShivrajRana7/Medicereum-main/blob/master/LICENSE.txt
