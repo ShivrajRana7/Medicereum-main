@@ -17,9 +17,9 @@ const Navbar1 = () => {
             <Container>
             <Navbar.Brand href="/">Home</Navbar.Brand>
             <Nav className="me-auto">
-            <Nav.Link href="/manufacturer">Manufacturer</Nav.Link>
-            <Nav.Link href="/consumer">Consumer</Nav.Link>
-            <Nav.Link href="/supplier">Supplier</Nav.Link>
+            <Nav.Link as={Link} to="/manufacturer">Manufacturer</Nav.Link>
+            <Nav.Link as={Link} to="/consumer">Consumer</Nav.Link>
+            <Nav.Link as={Link} to="/supplier">Supplier</Nav.Link>
             </Nav>
             </Container>
         </Navbar>
