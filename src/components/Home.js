@@ -2,6 +2,12 @@ import React from "react";
 import Logo from '../assets/Logo.png'
 import videoUrl from '../assets/backVideo1.mp4'
 import {useState }from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 import Header from './Header';
 
 
@@ -42,10 +48,10 @@ const Home = ({accountObject}) => {
              </div>
               <div className="menu">
                 <ul>
-                     <li><a href="/">Home</a></li>
-                     <li><a href="/manufacturer">Manufacturer</a></li>
-                     <li><a href="/consumer">Consumer</a></li>
-                     <li><a href="/supplier">Supplier</a></li>
+                     <li><Link to="/">Home</Link></li>
+                     <li><Link to="/manufacturer">Manufacturer</Link></li>
+                     <li><Link to="/consumer">Consumer</Link></li>
+                     <li><Link to="/supplier">Supplier</Link></li>
                  </ul>
              </div>   
         </>

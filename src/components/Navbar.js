@@ -1,5 +1,11 @@
 import React from 'react'
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Logo from '../assets/Logo.png'
 import {useState }from 'react';
