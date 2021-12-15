@@ -82,10 +82,11 @@
 ### Built With
 
 - [Web3js]()
+- [Remix]()
 - [Solidity]()
 - [Polygon]()
 - [IPFS]()
-- [REACT]()
+- [React]()
 <!-- GETTING STARTED -->
 
 ## Getting Started
