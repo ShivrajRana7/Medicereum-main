@@ -48,10 +48,10 @@ const Home = ({accountObject}) => {
              </div>
               <div className="menu">
                 <ul>
-                     <li><Link to="/">Home</Link></li>
-                     <li><Link to="/manufacturer">Manufacturer</Link></li>
                      <li><Link to="/consumer">Consumer</Link></li>
                      <li><Link to="/supplier">Supplier</Link></li>
+                     <li><Link to="/manufacturer">Manufacturer</Link></li>
+                     <li><Link to="/about">About</Link></li>
                  </ul>
              </div>   
         </>

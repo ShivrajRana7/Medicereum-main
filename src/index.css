@@ -27,12 +27,12 @@ h5 {
   font-weight: 600;
   padding-right: 860px;
 }
-/* .dLogo {
-  right: 10%;
-  top: -95px;
+.dLogo {
+  right: 5%;
+  top: 10px;
   position: absolute;
   display: inline;
-} */
+}
 
 .showcase {
   position: absolute;

@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Manufacturer from './components/Manufacturer';
 import Consumer from './components/Consumer';
 import Supplier from './components/Supplier';
+import About from "./components/About";
 import { BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom';
 
 import { SUPPLYCHAIN_CONTRACT_DEPLOY_ADDRESS } from './repository/address';
@@ -83,6 +84,7 @@ function App() {
           <Route exact path= "/consumer" element={ <Consumer accountObject={web3objectDetails} web3Object = {web3} supplychainContract={supplychainContract} />} />
           <Route exact path= "/supplier" element={<Supplier accountObject={web3objectDetails} web3Object = {web3} supplychainContract={supplychainContract} />} />
           <Route exact path= "/manufacturer" element={<Manufacturer accountObject={web3objectDetails} web3Object = {web3} supplychainContract={supplychainContract} />} />
+          <Route exact path= "/about" element={ <About accountObject={web3objectDetails} web3Object = {web3} supplychainContract={supplychainContract} />} />
         </Routes>
       </div>
     </Router>
